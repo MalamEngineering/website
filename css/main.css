@@ -1,0 +1,179 @@
+body {
+    font-family: FontAwesome;
+    background: steelblue;
+}
+/***********************************
+    TOP-INFO
+***********************************/
+    #top-info {
+        background: rgb(40, 120, 160);
+        height: 36px;
+    }
+        #top-info ul > li > a {
+            color: rgb(173, 216, 230);
+            font-size: 11px;
+        }
+        #top-info ul > li.open > a,
+        #top-info ul > li > a:hover,
+        #top-info ul > li > a:focus {
+            background: none;
+            color: rgb(255, 255, 255);
+            outline: none;
+        }
+        #top-info .navbar-form {
+            vertical-align: top;
+            position: relative;
+            top: -13px;
+            height: 30px;
+        }
+        #top-info .navbar-form .form-control {
+            font-size: 12px;
+            line-height: 1;
+            background: rgba(170, 204, 204);
+            border: none;
+            color: #444;
+            opacity: 0.4;
+            border-radius: 3px;
+            z-index: auto;
+            height: 30px;
+        }
+        #top-info .navbar-form .form-control::-webkit-input-placeholder,
+        #top-info .navbar-form .form-control:-moz-placeholder,
+        #top-info .navbar-form .form-control:-ms-input-placeholder { color: #fff !important; }
+            #top-info .form-control:focus {
+                opacity: 0.6;
+            }
+            #top-info .navbar-form:after {
+                content: "\f002";
+                font-size: 21px;
+                color: rgb(70, 130, 130);
+                top: 23%;
+                position: relative;
+                right: 30px;
+                z-index: 1;
+            }
+/***********************************
+    DROP-DOWN
+***********************************/
+.dropdown-menu {
+
+}
+    .dropdown-menu li.dropdown-menu-header {
+        font-size: 12px;
+        font-family: "Glyphicons Halflings";
+        font-weight: bolder;
+        color: rgb(119, 119, 119);
+        padding: 10px;
+        text-align: center;
+    }
+   .dropdown-menu > li > a {
+       padding: 5px 20px !important;
+       color: rgb(70, 130, 180) !important;
+   }
+   .dropdown-menu > li > a:hover {
+       background: #e2e2e2 !important;
+   }
+
+/***********************************
+    NAVBAR
+***********************************/
+.navbar {
+    background: none;
+    border: none;
+}
+    .navbar .navbar-nav > li > a,
+    .navbar .navbar-nav > li.active > a,
+    .navbar .navbar-nav > li.active > a:hover {
+        color: rgb(173,216,230);
+        background: none;
+    }
+    .navbar .navbar-nav > li > a:hover {
+        color: rgb(255, 255, 255);
+    }
+
+/**************************************
+SLIDESHOW
+**************************************/
+.slideshow {
+    width: 100%;
+    position: relative;
+    height: 580px;
+    overflow: hidden;
+}
+    .slideshow .slideshow-navigation {
+        position: absolute;
+        top: 350px;
+        right: 10px;
+        z-index: 10;
+        opacity: 0.5;
+    }
+    .slideshow .slideshow-img {
+        width: 50%;
+        height: 400px;
+        overflow: hidden;
+        float: right;
+        border: solid 5px #cccccc;
+        border-radius: 4px;
+        position: relative;
+    }
+    .slideshow .slideshow-img .image-description {
+        position: absolute;
+        top: 0;
+        z-index: 10;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 5px 200px;
+    }
+        .slideshow .slideshow-img .image-description p {
+            color: #c7c7c7;
+            text-align: center;
+            line-height: 1.8;
+            font-family: Lato, Arial, sans-serif;
+            font-size: 16px;
+        }
+    .slideshow .slideshow-img:after { clear: both; }
+    .slideshow .slideshow-text {
+        color: #fff;
+        font-family: Lato,'Helvetica Neue',Arial,sans-serif;
+        line-height: 28px;
+        width: 50%;
+        padding-left: 250px;
+    }
+        .slideshow .slideshow-text .slideshow-title {
+             font-size: 48px;
+             font-weight: bold;
+
+         }
+        .slideshow .slideshow-text .slideshow-description {
+            font-size: 28px;
+            font-family: Lato, Arial, sans-serif;
+            line-height: 1.6;
+            font-weight: 100;
+            margin-top: 20px;
+        }
+
+/************************************************************
+SERVICE-NEWS
+************************************************************/
+#testimony {
+    background: #ffffff;
+    height: 280px;
+    padding-top: 30px;
+}
+    #testimony .testimony-picture { opacity: 0.5; }
+    #testimony .testimony-text {
+        margin-top: 16px;
+        width: 500px;
+        color: #555;
+        font-size: 18px;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        line-height: 1.5;
+        /*border-left: 5px solid lightsteelblue;*/
+        margin-left: 100px;
+        padding-left: 50px;
+    }
+        #testimony .testimony-text small { color: #aaa; }
+        #testimony .testimony-text small strong { color: steelblue; }
+        #testimony .testimony-text small:before {
+            content: '\2014 \00A0';
+            color: #aaa;
+        }
