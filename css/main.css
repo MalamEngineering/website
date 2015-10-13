@@ -511,7 +511,7 @@ TIMELINE
     z-index: 10;
 }
     #timeline-nav > li > a {
-        color: #fff;
+        color: #e2e2e2;
     }
     #timeline-nav > li.active a { border-left: solid 1px #eee; }
     #timeline-nav > li > a:hover {
