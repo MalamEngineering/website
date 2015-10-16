@@ -11,7 +11,8 @@ app = angular.module('malam', ['ngRoute', 'angular-spinkit'])
                 templateUrl: 'views/who.tmp.html'
             })
             .when('/what', {
-                templateUrl: 'views/what.tmp.html'
+                templateUrl: 'views/what.tmp.html',
+                controller: 'WhatController'
             })
             .when('/where', {
                 templateUrl: 'views/where.tmp.html'

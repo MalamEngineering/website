@@ -6,7 +6,6 @@ app.directive('routeLoadingIndicator', function($rootScope) {
         restrict: 'E',
         template: "<div ng-show='isRouteLoading' class='loading'>" +
             "<div class='loading-indicator-body'>" +
-            "<h3 class='loading-title'>Loading...</h3>" +
             "<div class='spinner'><double-bounce-spinner style='position: absolute; top: 0; width: 100%; margin: 0 auto;'></double-bounce-spinner></div>" +
             "</div>" +
             "</div>",
