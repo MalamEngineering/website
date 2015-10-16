@@ -648,5 +648,5 @@ BLOG
         .blog #right .nav li a:hover,
         .blog #right .nav li a:focus,
         .blog #right .nav li a:visited {
-            background: none;
+            background: none !important;
         }
