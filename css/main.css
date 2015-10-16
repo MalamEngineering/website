@@ -598,3 +598,49 @@ WIDE DROPDOWN
         display: none;
     }
 }
+/*******************************************
+BLOG
+*******************************************/
+.blog {}
+    .blog .cover {
+        background: lightsteelblue;
+        height: 300px;
+        overflow: hidden;
+    }
+    .blog #main-content {
+        background: rgba(192,206,220, 0.3);
+        padding: 0;
+    }
+        .blog #main-content .title {
+            padding: 2px 40px;
+            -webkit-box-shadow: 1px 1px 1px 1px;
+            -moz-box-shadow: 1px 1px 1px 1px;
+            box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+            background: rgba(192,206,220, 0.4);
+        }
+            .blog #main-content .title h3 {
+                font-family: Lato, 'Helvetica Neue', Arial, sans-serif;
+                color: #d8d8e8;
+                padding-bottom: 10px;
+            }
+        .blog #main-content .content {
+            text-align: justify;
+            padding: 30px 40px;
+        }
+            .blog #main-content .content h5 {
+                color: #fff;
+                font-weight: bolder;
+                padding: 20px 0;
+            }
+            .blog #main-content .content p {
+                color: #d8d8d8;
+                line-height: 1.8;
+                text-indent: 30px
+            }
+.blog #right {  padding: 100px 0 0 30px; }
+    .blog #right h4 {
+        font-family: Lato, 'Helvetica Neue', Arial, sans-serif;
+        color: #fff;
+        padding-bottom: 10px;
+        font-weight: bolder;
+    }
