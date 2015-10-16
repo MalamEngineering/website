@@ -96,16 +96,14 @@ body {
 }
     .navbar .navbar-nav > li > a,
     .navbar .navbar-nav > li > a:hover,
-    .navbar .navbar-nav > li > a:focus,
     .navbar .navbar-nav > li > a:visited {
         color: rgb(255, 255, 255);
     }
-    .navbar .navbar-nav > li.active > a,
-    .navbar .navbar-nav > li.active > a:focus,
-    .navbar .navbar-nav > li.active > a:hover {
+    .navbar .navbar-nav > li > a:focus,
+    .navbar .navbar-nav > li > a:hover {
         color: rgb(173,216,230);
         background: none;
-        cursor: default;
+        cursor: pointer;
     }
 
 /**************************************
