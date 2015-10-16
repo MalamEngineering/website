@@ -644,3 +644,9 @@ BLOG
         padding-bottom: 10px;
         font-weight: bolder;
     }
+        .blog #right .nav li a,
+        .blog #right .nav li a:hover,
+        .blog #right .nav li a:focus,
+        .blog #right .nav li a:visited {
+            background: none;
+        }
