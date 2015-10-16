@@ -57,25 +57,16 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#/">Home <span class="sr-only">(current)</span></a></li>
                             <li><a href="#/who">Who <i class="fa fa-question"></i></a></li>
-                            <li class="has-wide-dropdown dropdown">
+                            <li class="has-wide-dropdown dropdown" ng-controller="WhatController">
                                 <a href="" class="dropdown-toggle" data-toggle="dropdown">What <i class="fa fa-question"></i></a>
                                 <div class="wide-dropdown col-md-12 dropdown-menu">
                                     <ul class="nav col-md-4">
-                                        <li class="dropdown-menu-header">Products</li>
-                                        <li><a href="#">Enterprise Resource Planning (ERP)</a></li>
-                                        <li><a href="#">Fleet Management System (Intelligent Transportation System)</a></li>
-                                        <li><a href="#">Networking Equipment</a></li>
-                                        <li><a href="#">Cable Pathways</a></li>
-                                        <li><a href="#">Electrical Power Distribution Systems</a></li>
-                                        <li><a href="#">Data Center Facility</a></li>
-                                        <li><a href="#">Safety and Security Solutions</a></li>
+                                        <li class="dropdown-menu-header">Services</li>
+                                        <li ng-repeat="service in whatServices"><a href="{{service.url}}">{{service.placeholder}}</a></li>
                                     </ul>
                                     <ul class="nav col-md-4">
-                                        <li class="dropdown-menu-header">Services</li>
-                                        <li><a href="#">Web Application and Website Development</a></li>
-                                        <li><a href="#">Unified Com`munication Solutions</a></li>
-                                        <li><a href="#">Web Hosting</a></li>
-                                        <li><a href="#">Consultancy & Project Management</a></li>
+                                        <li class="dropdown-menu-header">Products</li>
+                                        <li ng-repeat="product in whatProducts"><a href="{{product.url}}">{{product.placeholder}}</a></li>
                                     </ul>
                                     <ul class="nav col-md-4">
                                         <li><a href="#">Datacenter Infrasturcture</a></li>
@@ -105,7 +96,7 @@
                         </ul>
                     </div>
                     <small class="copyright pull-left">Copyright &#169; 2015 Malam Engineering PLC</small>
-                    <small class="copyright pull-right">Designed and Developed by &#8212;&#160;<a href="#">Merhawi Fissehaye Gebrehiwet +251914153366</a></small>
+                    <small class="copyright pull-right">Designed and Developed by &#8212;&#160;<a href="#">Merhawi Fissehaye Gebrehiwet +251-973-05-3999</a></small>
                 </div>
             </nav>
         </footer>
