@@ -85,4 +85,7 @@ app = angular.module('malam', ['ngRoute', 'angular-spinkit'])
                 img: ''
             }
         ];
+    }]).
+    controller('ContactController', ['$scope', function($scope) {
+
     }]);

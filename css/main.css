@@ -2,6 +2,19 @@ body {
     font-family: FontAwesome;
     background: steelblue;
 }
+.form-control {
+    background: #36a2c4;
+    border: none;
+    opacity: 0.8;
+}
+textarea.form-control {
+    resize: vertical;
+    height: 200px;
+}
+.form-control::-webkit-input-placeholder { color: white; }
+.form-control:-moz-placeholder { color: white; }
+.form-control:-ms-input-placeholder { color: white; }
+.help-block { color: #fff; }
 /***********************************
     TOP-INFO
 ***********************************/
@@ -627,7 +640,11 @@ BLOG
             text-align: justify;
             padding: 30px 40px;
         }
-            .blog #main-content .content h5 {
+            .blog #main-content .content h5,
+            .blog #main-content .content h4,
+            .blog #main-content .content h3,
+            .blog #main-content .content h2,
+            .blog #main-content .content h1 {
                 color: #fff;
                 font-weight: bolder;
                 padding: 20px 0;
@@ -649,4 +666,38 @@ BLOG
         .blog #right .nav li a:focus,
         .blog #right .nav li a:visited {
             background: none !important;
+            color: #fff;
+            padding-left: 0;
+            text-decoration: underline;
         }
+
+/*****************************************************
+CONTACT FORM
+*****************************************************/
+#contact-form {
+    background: url('../img/mail.png') no-repeat;
+    background-position: center;
+}
+.datepicker td,
+.datepicker th,
+.timepicker td,
+.timepicker th,
+.timepicker .btn {
+    color: #fff;
+}
+.datepicker td.day.old,
+.datepicker td.day.new { color: #ccc; }
+
+.datepicker th.picker-switch:hover {
+    color: #444;
+}
+.datepicker td:hover,
+.timepicker td:hover,
+.timepicker th:hover,
+.timepicker .btn:hover {
+    color: #000;
+}
+.datepicker td.day.active,
+.datepicker td.day.active:hover {
+    background: #339ac7;
+}
